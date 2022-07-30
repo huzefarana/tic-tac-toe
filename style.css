@@ -24,8 +24,8 @@ nav ul{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 10vw);
-    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(4, 10vw);
+    grid-template-rows: repeat(4, 10vw);
     font-family: 'Raleway', sans-serif;
 }
 .box{
@@ -45,7 +45,9 @@ nav ul{
     padding: 34px;
     font-family: 'Baloo Bhai 2', cursive;
 }
-
+button{
+    margin-left: 20px;
+}
 
 
 
