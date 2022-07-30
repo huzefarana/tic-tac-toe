@@ -47,7 +47,17 @@ nav ul{
 }
 button{
     margin-left: 20px;
+    padding: 5px;
+    background-color: whitesmoke;
 }
+button:hover{
+    background-color:gainsboro;
+    cursor: pointer;
+}
+.info{
+    font-size: 20px;
+}
+
 
 
 
