@@ -20,12 +20,10 @@ const checkWin = ()=>{
     ];
     wins.forEach(e => {
         if( boxtext[e[0]].innerText!=='', boxtext[e[1]].innerText!=='', boxtext[e[2]].innerText!=='', boxtext[e[3]].innerText!==''){
-            if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) &&(boxtext[e[2]].innerText === boxtext[e[3]].innerText)&&(boxtext[e[1]].innerText === boxtext[e[2]].innerText)&&(boxtext[e[0]].innerText !== 0))
+            if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) &&(boxtext[e[2]].innerText === boxtext[e[3]].innerText)&&(boxtext[e[1]].innerText !== boxtext[e[2]].innerText)&&(boxtext[e[0]].innerText !== 0))
             document.getElementsByClassName("info")[0].innerText = boxtext[e[0]].innerText + " won"
            
         }
-        // if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) &&(boxtext[e[2]].innerText === boxtext[e[3]].innerText)&&(boxtext[e[1]].innerText === boxtext[e[2]].innerText)&&(boxtext[e[0]].innerText !== 0))
-        //  document.getElementsByClassName("info")[0].innerText = boxtext[e[0]].innerText + " won"
         
     });
 }
@@ -44,9 +42,6 @@ boxes.forEach(element =>{
             document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
             checkWin();
             music.play()
-            // if (!isgameover){
-            //     document.getElementById("info")[0].innerText = "turn for" + turn;
-            // }
         }
     })
 })
