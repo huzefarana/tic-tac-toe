@@ -48,7 +48,7 @@ boxes.forEach(element =>{
             document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
             checkWin();
             //music.play()
-            
+            gameOver()
         }
     })
 })
