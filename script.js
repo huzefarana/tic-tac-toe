@@ -1,7 +1,7 @@
 console.log("Welcome to Tic Tac Toe")
 let turn = "X"
 let music = new Audio("press.wav")
-let gameOver = stop
+let gameOver = true
 
 //Change turn
 
