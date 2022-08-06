@@ -13,16 +13,18 @@ function validate(){
   (document.getElementById("name").innerText === credentials.Name3) && 
   (document.getElementById("password").innerText === credentials.password3) &&
   (document.getElementById("input").innerText !== "")){
-    alert("login Successfully")
-    document.getElementById("myButton").onclick = function (){
-      location. href = "dashboard.html"
-     }
-    
+    alert("login Successfully")   
     }
  else{
   alert("Login failed ")
  }
 }
+document.getElementById("myButton").onclick = function (){
+  location. href = "dashboard.html"
+ }
+
+
+
 
 
 
