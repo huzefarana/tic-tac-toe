@@ -23,12 +23,3 @@ function validate(){
   alert("Login failed")
  }
 }
-
-
-
-
-
-
-
-
-
