@@ -1,9 +1,19 @@
 
+var myName = "bilal"
+var input = (document.getElementById("name").innerText)
+function validate(){
+  if(( input == myName) &&
+
+  (input !== "")){
+    alert("login Successfully")
+  }
+}
 let credentials = [
   {name:"bilal" , password:"markcoders"},
   {name:"huzefa", password:"abc123"},
   {name:"sarang", password:"sarang90"} 
 ]
+
 
 //   var input1 = (document.getElementById("name").value)
 //   var input2 = (document.getElementById("password").value)
@@ -23,14 +33,13 @@ let credentials = [
 //  }
 // }
 
-localStorage.setItem(current_user.name == input1)
-
 check();
 function check()
 {
 
   var input1 = (document.getElementById("name").value)
   var input2 = (document.getElementById("password").value)
+
 
   
   for (let i = 0; i < credentials.length; i++) {
@@ -40,6 +49,9 @@ function check()
       (current_user.password == input2))
     {
       window.location = "dashboard.html" 
-    }
   }
+}
+}
+else{
+  alert("vd")
 }
