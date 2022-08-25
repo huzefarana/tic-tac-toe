@@ -48,10 +48,8 @@ function check()
     if((current_user.name == input1) &&
       (current_user.password == input2))
     {
-      window.location = "dashboard.html" 
+       // window. location. href = "https://www.markcoders.com"
+       window.location = "dashboard.html" 
   }
 }
-}
-else{
-  alert("vd")
 }
