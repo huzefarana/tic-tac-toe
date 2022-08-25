@@ -33,7 +33,6 @@ let credentials = [
 //  }
 // }
 
-check();
 function check()
 {
 
@@ -41,7 +40,7 @@ function check()
   var input2 = (document.getElementById("password").value)
 
 
-  
+  let flag = false
   for (let i = 0; i < credentials.length; i++) {
     let current_user=credentials[i];
 
@@ -49,8 +48,12 @@ function check()
       (current_user.password == input2))
     {
       localStorage.setItem('name',current_user.name);
-       // window. location. href = "https://www.markcoders.com"
+      flag = true
+      // window. location. href = "https://www.markcoders.com"
        window.location = "dashboard.html" 
-  }
+  } 
+}
+if (flag == false){
+  alert("details incorrect")
 }
 }
