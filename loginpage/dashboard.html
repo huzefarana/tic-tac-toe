@@ -7,6 +7,10 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Welcome to your dashboard, Bilal!</h1>
+    <h1> Welcome to your dashboard, <span id="welcome-txt"></span></h1>
+    <script>
+        let name = localStorage.getItem('name');
+        document.getElementById('welcome-txt').innerHTML = name;
+    </script>
 </body>
 </html>

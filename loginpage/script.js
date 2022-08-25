@@ -48,6 +48,7 @@ function check()
     if((current_user.name == input1) &&
       (current_user.password == input2))
     {
+      localStorage.setItem('name',current_user.name);
        // window. location. href = "https://www.markcoders.com"
        window.location = "dashboard.html" 
   }
