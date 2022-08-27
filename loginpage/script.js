@@ -45,7 +45,9 @@ function check()
     let current_user=credentials[i];
 
     if((current_user.name == input1) &&
-      (current_user.password == input2))
+      (current_user.password == input2) &&
+      (current_user.name !== "") &&
+      (current_user.password !== "")) 
     {
       localStorage.setItem('name',current_user.name);
       flag = true
@@ -54,6 +56,7 @@ function check()
   } 
 }
 if (flag == false){
-  alert("details incorrect")
+  document.getElementById("error-msg").innerHTML = "*invalidcredentials"
 }
 }
+
