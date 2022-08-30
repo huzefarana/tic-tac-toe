@@ -1,13 +1,4 @@
 
-var myName = "bilal"
-var input = (document.getElementById("name").innerText)
-function validate(){
-  if(( input == myName) &&
-
-  (input !== "")){
-    alert("login Successfully")
-  }
-}
 let credentials = [
   {name:"bilal" , password:"markcoders"},
   {name:"huzefa", password:"abc123"},
@@ -68,5 +59,6 @@ function showPass() {
     x.type = "password";
   }
 }
+
 
 
