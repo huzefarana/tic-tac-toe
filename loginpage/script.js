@@ -47,7 +47,7 @@ function check()
     if((current_user.name == input1) &&
       (current_user.password == input2) &&
       (current_user.name !== "") &&
-      (current_user.password !== "")) 
+      (current_user.password !== ""))
     {
       localStorage.setItem('name',current_user.name);
       flag = true
@@ -55,8 +55,18 @@ function check()
        window.location = "dashboard.html" 
   } 
 }
+
 if (flag == false){
-  document.getElementById("error-msg").innerHTML = "*invalidcredentials"
+  document.getElementById("error-msg").innerHTML = "*invalid credentials"
 }
 }
+function showPass() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
 

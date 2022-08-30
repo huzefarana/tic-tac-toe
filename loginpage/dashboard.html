@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <h1> Welcome to your dashboard, <span id="welcome-txt"></span></h1>
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
     <script>
         let name = localStorage.getItem('name');
         document.getElementById('welcome-txt').innerHTML = name;
