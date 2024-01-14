@@ -57,18 +57,16 @@ Array.from(boxes).forEach(element => {
     element.addEventListener("click", () => {
         if (boxtext.innerText === "" && !gameOver) {
             boxtext.innerText = turn;
-            turn = changeTurn();
             checkWin();
-            if (checkDraw()) {
-                document.getElementsByClassName("info")[0].innerText = "Game Drawn!";
-                gameOver = true;
-            } else {
+            if (!gameOver) {
+                turn = changeTurn();
                 document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
             }
-            //music.play()
+            // music.play()
         }
     });
 });
+
 
 // Reset Game
 let reset = document.getElementById("reset");
